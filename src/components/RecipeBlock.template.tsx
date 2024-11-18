@@ -1,6 +1,8 @@
-import MonacoCodeEditor from './MonacoCodeEditor';
+import dynamic from 'next/dynamic';
 
-export const RecipeBlock = {
+const MonacoCodeEditor = dynamic(() => import('./MonacoCodeEditor'), { ssr: false });
+
+export const RecipeBlockTemplate = {
   name: 'recipeBlock',
   label: 'Recipe Block',
   fields: [
@@ -59,3 +61,5 @@ export const RecipeBlock = {
     },
   ],
 };
+
+export default RecipeBlockTemplate;

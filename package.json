@@ -1,6 +1,6 @@
 {
   "name": "recipetinacms",
-  "version": "1.0.8",
+  "version": "1.0.13",
   "description": "The Recipe Component built by TinaCMS used on Tina.io",
   "main": "index.js",
   "types": "index.d.ts",

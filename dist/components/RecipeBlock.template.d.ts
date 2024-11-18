@@ -1,4 +1,4 @@
-export declare const RecipeBlock: {
+export declare const RecipeBlockTemplate: {
     name: string;
     label: string;
     fields: ({
@@ -13,7 +13,7 @@ export declare const RecipeBlock: {
         name: string;
         label: string;
         ui: {
-            component: (props: import("tinacms/dist/toolkit/fields/plugins/field-props").FieldProps<{}>) => React.JSX.Element;
+            component: import("react").ComponentType<import("tinacms/dist/toolkit/fields/plugins/field-props").FieldProps<{}>>;
             itemProps?: undefined;
         };
         list?: undefined;
@@ -44,3 +44,4 @@ export declare const RecipeBlock: {
         })[];
     })[];
 };
+export default RecipeBlockTemplate;
